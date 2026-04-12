@@ -1,7 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/gribanovaleksey17/qa-engineer-project-84/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/gribanovaleksey17/qa-engineer-project-84/actions)
 
-Описание проекта.
 Проект посвящен тестированию SPA интернет-магазина Hexlet Products Store.
 Приложение позволяет пользователю просматривать каталог товаров, применять фильтры, выполнять поиск, добавлять товары в корзину и оформлять заказ.
 
