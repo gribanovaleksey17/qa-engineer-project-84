@@ -136,7 +136,7 @@
     Товар = Essence Mascara Lash Princess
   steps:
     - Найти в каталоге товар "Essence Mascara Lash Princess"
-    - Открыть страницу товара
+    - Нажать на картинку товара
   expected-result: |
     Открывается страница товара "Essence Mascara Lash Princess".
     На странице отображаются:
