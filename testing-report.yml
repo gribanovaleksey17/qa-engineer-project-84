@@ -27,7 +27,7 @@
   status: pass
 
 - summary: Просмотр детальной информации о товаре из каталога
-  status: pass
+  status: fail
 
 - summary: Переход в категорию товара по хэштегу на странице товара
   status: fail
