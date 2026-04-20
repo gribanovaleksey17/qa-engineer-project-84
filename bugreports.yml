@@ -148,3 +148,20 @@
   actual-result: |
     Фильтр применяется только к текущей странице пагинации.
     Категория beauty не отображается.
+
+- summary: |
+    Фильтр по цене не учитывает цену со скидкой
+  environment: |
+    Google Chrome 124.0.6344.93 (64-bit)
+    Ubuntu 22.04 x86_64
+    https://products-store.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть сайт магазина https://products-store.hexlet.app/
+    2. Установить фильтр цены "10" и "20"
+    3. Проверить список товаров
+  expected-result: |
+    Фильтрация учитывает итоговую цену товара со скидкой.
+    Товар "Dog Food" в диапазоне отображаются.
+  actual-result: |
+    Отображается товар  "Dog Food" с ценой 9.86$.
+    screenshot: assets/bugreports/image-bug-8.png.
