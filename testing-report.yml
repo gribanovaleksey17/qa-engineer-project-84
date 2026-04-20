@@ -3,7 +3,7 @@
   status: pass
 
 - summary: Проверка поиска товара по существующему ключевому слову
-  status: pass
+  status: fail
 
 - summary: Проверка поиска товара по несуществующему ключевому слову
   status: pass
