@@ -165,3 +165,25 @@
   actual-result: |
     Отображается товар  "Dog Food" с ценой 9.86$.
     screenshot: assets/bugreports/image-bug-8.png.
+
+- summary: |
+    При оформлении заказа API-запрос возвращает ошибку 500 (Internal Server Error)
+  environment: |
+    Google Chrome 124.0.6344.93 (64-bit)
+    Ubuntu 22.04 x86_64
+    https://products-store.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть сайт https://products-store.hexlet.app/
+    2. Добавить товар "Essence Mascara Lash Princess" в корзину
+    3. Перейти в корзину
+    4. Открыть DevTools
+    5. Перейти во вкладку Network
+    6. Нажать кнопку "Checkout"
+    7. Найти запрос оформления заказа в Network
+  expected-result: |
+    Запрос оформления заказа выполняется успешно.
+    Сервер возвращает статус 200.
+    Ошибки 4xx/5xx отсутствуют.
+  actual-result: |
+    При оформлении заказа сервер возвращает статус 500 (Internal Server Error).
+    screenshot: assets/bugreports/image-bug-9.png.
