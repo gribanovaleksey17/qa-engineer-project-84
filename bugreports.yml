@@ -187,3 +187,38 @@
   actual-result: |
     При оформлении заказа сервер возвращает статус 500 (Internal Server Error).
     screenshot: assets/bugreports/image-bug-9.png.
+
+- summary: |
+    В корзине некорректно выровнено отображение количества товаров
+  environment: |
+    Google Chrome 124.0.6344.93 (64-bit)
+    Ubuntu 22.04 x86_64
+    https://products-store.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть сайт https://products-store.hexlet.app/
+    2. Добавить товар Essence Mascara Lash Princess в корзину 
+    3. Добавить товар Apple в корзину
+    4. Перейти в корзину
+  expected-result: |
+    Количество товара отображается корректно и визуально выровнено относительно других элементов корзины.
+    Элементы интерфейса не смещены и не "прыгают".
+  actual-result: |
+    Количество товара отображается с некорректным выравниванием.
+    Количество товара смещёны относительно других элементов в строке товара.
+    screenshot: assets/bugreports/image-bug-10.png.
+
+- summary: |
+    При переключении языка интерфейса на английский отсутствует иконка английского языка
+  environment: |
+    Google Chrome 124.0.6344.93 (64-bit)
+    Ubuntu 22.04 x86_64
+    https://products-store.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть сайт https://products-store.hexlet.app/
+    2. Нажать на переключатель языка (EN)
+  expected-result: |
+    При выборе английского языка отображается иконка английского языка (флаг UK).
+    Переключатель языка отображается корректно.
+  actual-result: |
+    При переключении на английский язык иконка английского языка не отображается.
+    screenshot: assets/bugreports/image-bug-11.png.
